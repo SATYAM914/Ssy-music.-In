@@ -1,0 +1,226 @@
+<html>
+<head>
+  <title>ssy music</title>
+  <style>
+    /* Body styles */
+    body {
+      background-color: #F7F7F7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #FF4081;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Main content styles */
+    .container {
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .song {
+      margin-bottom: 20px;
+    }
+
+    .song img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .song h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .song p {
+      margin: 0;
+      font-size: 16px;
+      color: #666666;
+    }
+
+    .play-btn {
+      background-color: #2196F3;
+      border: none;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .play-btn:hover {
+      background-color: #0D47A1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://see.fontimg.com/api/renderfont4/9YdJ7/eyJyIjoiZnMiLCJoIjoxNTYsInciOjIwMDAsImZzIjo3OCwiZmdjIjoiI0UwQ0YyQyIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/U1NZIE1VU0lD/farenheight-personal-use-regular.png" width="90%">
+</header>
+<hr color=aqua size=5>
+<nav>
+    <ul>
+      <li><a href="">Home</a></li><br>
+      <li><a href=" https://satyam914.github.io/SATYAM-SINGH-YADAV-APPS/ ">Our Shopping App</a></li><br>
+      <li><a href="https://simsimi.com/">Expert chat</a></li>
+    </ul>
+  </nav>
+<hr color=yellow size=5>
+<center><font color=green><h2> Coming SONG </h2><br></font>
+<marquee><img src="data:image/jpeg;base64,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" width="90%"></marquee>
+<hr color=yellow size=5>
+<br></br>
+<FONT color ="Blue" size="5">Recently Added Songs </font>
+<br></br>
+<br></br>
+<br></br>
+<center>
+<font color=red size=4><b>( 1 )</b></font><h1> Zihaal e Miskin (LYRICS) Shreya Ghoshal, Vishal Mishra | Rohit Z, Nimrit A | Javed-Mohsin | Kunaal V</h1>
+ <div>
+<center>
+<iframe width="900" height="450"  controls src="https://www.youtube.com/embed/7-b12eU1-fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border:2px red solid;"allowfullscreen></iframe>
+
+</div>
+<br></br>
+<br></br>
+<center>
+  <h1>
+<font color=Green size=4><b>( 2 )</b></font> Ae Dil Hai Mushkil Title Track Full Video - Ranbir, Anushka, Aishwarya|Arijit|Pritam<br>
+<center><iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/39ghSEArbf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px pink solid;" allowfullscreen></iframe></center>
+<br></br>
+<br></br>
+<font color=pink size=4><b>( 3 )</b></font>  Arijit Singh: Pachtaoge | Vicky Kaushal, Nora Fatehi |Jaani, B Praak, Arvindr Khaira | Bhushan Kumar </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/MDlXAIoesQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 4 )</b></font> YADAV BRAND 2 - Sunny Yaduvanshi ft.AK Rok I Nitesh Ujoli I Flame Music I Latest haryanvi songs 2022</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/_zGkcVal9qM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px purple solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=magenta size=4><b>( 5 )</b></font>YALGAAR - CARRYMINATI X Wily Frenzy </font><br>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/3dYKEFg9wH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px red solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=vilot size=4><b>( 6 )</b>Tere Vaaste | Zara Hatke Zara Bachke | Vicky Kaushal, Sara Ali Khan, Varun J, Sachin-Jigar,Amitabh B</font> </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/GOGZIeKzvzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px red solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 7 )</b></font> #Video महबूबा हमार | #Neelkamal Singh New Song | Mahbooba Hamar | #Divya Ralhan | #Bhojpuri Gana</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/ZuHXSvL_4KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 8 )</b></font>Best new hindi song 2023 | Hindi Romantic Songs | Best of Atif Aslam, Arijit Singh, Jubin Nautyal </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/-fYTTQ0su3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 9 )</b></font>New Hindi Song 2022 | jubin nautiyal , arijit singh, Atif Aslam, Neha Kakkar , Shreya Ghoshal </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/cXJqL6Gl7Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 10 )</b></font> Kya Loge Tum | Akshay Kumar | Amyra Dastur | BPraak | Jaani | Arvindr Khaira | Zohrajabeen</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/cAMHx-m9oh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 11 )</b></font>Barsaat Aa Gayi (Video) Javed-Mohsin| Shreya Ghoshal,Stebin Ben | Hina Khan, Shaheer Sheikh|Kunaal V </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/61SJuITd3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 12 )</b></font> APNA BANA LE Love Hits - Full Album | Nonstop Romantic Songs | Valentine Special 2023</font>
+<iframe width="900" height="215" controls muted src="https://www.youtube.com/embed/3fPQtxRwn6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 13 )</b></font> Naseeb Se (Video) SatyaPrem Ki Katha | Kartik, Kiara | Sameer V, Sajid N, Namah | Payal D, Vishal M</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/Sk0DsJuJ_y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 14 )</b></font> Gujju Pataka (Video) SatyaPrem Ki Katha | Kartik, Kiara | Meet Bros, Kumaar |Sameer, Sajid N, Namah</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/xUkroAWdTnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 15 )</b></font>Ram Siya Ram (Hindi) Adipurush | Prabhas | Sachet-Parampara, Manoj Muntashir S | Om Raut | Bhushan K </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/GXWfue9VhTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 16 )</b></font>O Bedardeya (Full Video) Tu Jhoothi Main Makkaar | Ranbir, Shraddha | Pritam,Arijit Singh, Amitabh B </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/EdftT8GMU1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 17 )</b></font> Jhoome Jo Pathaan Song | Shah Rukh Khan, Deepika | Vishal & Sheykhar, Arijit Singh, Sukriti, Kumaar</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/YxWlaYCA8MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 18 )</b></font>Barbaadiyan (Full Video)| Shiddat |Sunny K,Radhika M |Sachet T,Nikhita G, Madhubanti B|Sachin -Jigar </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/vJQMhj6WYZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 19 )</b></font> Shiddat Title Track (Full Video) |Sunny Kaushal,Radhika Madan, Mohit Raina, Diana P | Manan Bhardwaj</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/iSo9l950QLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 20 )</b></font> Chitta (Video)| Shiddat | Sunny Kaushal, Radhika Madan, Mohit Raina,Diana Penty | Manan Bhardwaj</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/4vpfmr6M4FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 21 )</b></font> #Video | पापा के परी | #Pawan Singh #Anumpa Yadav | Papa Ke Pari | New Bhojpuri Song 2023</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/CQdUyG5J0fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 22 )</b></font> #Video | Murabba | #Khesari Lal Yadav | #Shilpi Raj | #Divya Ralhan | मुरब्बा | #Bhojpuri Gaana</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/Urbb8H6wAY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 23 )</b></font> Haule Haule | Full Song | Rab Ne Bana Di Jodi | Shah Rukh Khan | Anushka Sharma </font><br>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/XgdY_s1LsZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 24 )</b></font> Baarish Aayi Hai (Teaser) | Rito Riba | Shivangi Joshi | Ankit Gupta | Rajat Nagpal | Rana Sotal</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/kbVt6GZH6FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 25 )</b></font> Song Teaser: Nain Bengali | Guru Randhawa | Vee | David Zennie | Bhushan K | Releasing 14 July</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/_EcbEnWgAkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 26 )</b></font> #Bhojouri Nonstop hit song | भोजपुरी के सुपरहिट 20 गाना | हरी हरी ओढनी | नचनिया | लाल घाघरा | देवरा.</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/WCzWUpk9kbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 27 )</b></font>Hindi Romantic Songs 2023 | Best new hindi songs | Best of Atif Aslam, Arijit Singh, Jubin Nautyal. </font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/ZWMBMYiUA-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+<br></br>
+<br></br>
+<font color=teal size=4><b>( 28 )</b></font> Broken  Album, Arijit Singh All Song,🎶 Lofi Songs, Motivation @vipmotivation2380</font>
+<iframe width="900" height="450" controls muted src="https://www.youtube.com/embed/hvzZzsMl3O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"style="border:2px orange solid;" allowfullscreen></iframe>
+</h1></center>
+<br></br>
+<br></br>
+
+<hr color=pink size=5>
+<center><font color=red><h6> Copyright © 2023. Created by  SATYAM SINGH Y.   <br><a href="mailto:-sy6394482@gmail.com">Contact Us</a> | <a href="https://m.dotmovies.boats/">About Us</a> | <a href="https://m.dotmovies.boats/sitemap_index.xml">sitemap</a> | </h6></center>
+<hr color=pink size=5>
+
+     <a href="https://daredevil3699580.wixsite.com/extremescienceandt-1">
+    <img src="https://media4.giphy.com/media/2MNQqWWG56oHdOiClM/200.gif?cid=6c09b952f6d06dcdd126db66469448003240c3e6e1d0bc6a&ep=v1_internal_gifs_gifId&rid=200.gif&ct=g" width="95%"></a>
+    <hr color=Magenta size=5>
+    <marquee><img src="https://see.fontimg.com/api/renderfont4/9YdJ7/eyJyIjoiZnMiLCJoIjo4MCwidyI6MjAwMCwiZnMiOjQwLCJmZ2MiOiIjMEM5OTlEIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UG93ZXJlZCBieSBFWHRyZW1lIEFzc29jaWF0aW9ucw/farenheight-personal-use-regular.png" width="100%"></marquee>
+<hr color=magenta size=5>
+<center><font colo=yellow size=7><u>Last update:-</u></font><font color=gold size=6>19 June 2023</font></center>
+</body>
+</html>
